@@ -5,19 +5,23 @@ export default function EffectComponent() {
   const [ value, setValue ] = useState(1);
   const [ variable, setVariable ] = useState(0)
 
-  console.log("Renderizado de EffectComponent")
   useEffect(()=>{
-    setVariable((previo) => previo + 1)
+    setVariable((previus) => previus + 1)
   }, [value])
   
   const toggle = ()=>{
-    setValue((previo)=> previo + 1)
+    setValue((previus)=> previus + 1)
   }
   return (
-    <div>
-      <div>{value}</div>
-      <div> {variable}</div>
-      <button onClick={toggle} className="bg-black text-white p-3 rounded-xl transition-all ease-in-out hover:bg-slate-800">Incrementar</button>
+    <div className="flex flex-col gap-2">
+      <span>This one is a state, it changes in every click event</span>
+      <div className="border-2 border-black text-center rounded-lg">{value}</div>
+      <div className="flex flex-col">
+        <span>This one is also a state, but it changes every time the other state changes </span>
+        <span>It doesn't care about the click event.</span>
+      </div>
+      <div className="border-2 border-black text-center rounded-lg"> {variable}</div>
+      <button onClick={toggle} className="bg-gray-900 text-white p-3 rounded-xl transition-all ease-in-out hover:bg-slate-800">Increment</button>
     </div>
   )
 }

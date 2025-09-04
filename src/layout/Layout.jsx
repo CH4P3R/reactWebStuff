@@ -5,7 +5,7 @@ export default function Layout() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col justify-center min-h-screen">
+      <div className="flex min-h-screen">
         <Outlet />
       </div>
       <Footer />

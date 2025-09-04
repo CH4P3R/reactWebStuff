@@ -1,9 +1,7 @@
-import { useContext } from "react"
-import MyContext from "../../context/context";
+import HierarchyComp1 from "./componentesJerarquicos/HierarchyComp1";
 
 export default function Componente() {
-    const contexto = useContext(MyContext);
   return (
-    <div>{contexto}</div>
+    <HierarchyComp1 />
   )
 }

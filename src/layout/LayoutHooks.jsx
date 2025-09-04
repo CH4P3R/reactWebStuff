@@ -3,10 +3,12 @@ import HooksSideBar from "../components/global/HooksSideBar"
 
 export default function LayoutHooks() {
   return (
-    <div>
+    <>
         <HooksSideBar />
-        <Outlet />
-    </div>
+        <div className="flex w-3/4 items-center justify-center">
+          <Outlet />
+        </div>
+    </>
   )
 }
 

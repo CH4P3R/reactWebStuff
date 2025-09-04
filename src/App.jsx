@@ -4,7 +4,7 @@ import HomePage from './pages/HomePage'
 import Hooks from "./pages/Hooks"
 export default function App() {
   return (
-    <div className='flex flex-col min-h-screen w-screen'>
+    <div className='flex flex-col w-screen'>
         <Router>
           <Routes>
             <Route element = {< Layout/>}>

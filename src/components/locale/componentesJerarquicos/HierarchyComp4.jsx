@@ -4,7 +4,7 @@ import MyContext from "../../../context/context";
 export default function HierarchyComp4() {
     const context = useContext(MyContext);
   return (
-    <div>
+    <div className="bg-fuchsia-400 p-5">
         { context }
     </div>
   )

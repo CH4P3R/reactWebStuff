@@ -1,3 +1,3 @@
 # React
 
-Mini proyecto personal para explorar las diferentes funcionalidades que ofrece la biblioteca de React
+Little personal web site made to understand React stuff (No adaptable design)
