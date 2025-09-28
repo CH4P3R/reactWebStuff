@@ -4,6 +4,7 @@ import ContextProvider from "../components/locale/ContextProvider"
 import EffectComponent from "../components/locale/EffectComponent"
 import ContextComponent from "../components/locale/ContextComponent"
 import StateComponent from "../components/locale/StateComponent"
+import MemoComponent from "../components/locale/MemoComponent"
 
 export default function Hooks() {
   return (
@@ -12,9 +13,10 @@ export default function Hooks() {
         <Routes>
           <Route path="/" element={<LayoutHooks />}>
             <Route index element={<Navigate to="useState" replace />} />
-            <Route index path="useState" element={<StateComponent />}/>
-            <Route index path="useEffect" element={<EffectComponent />}/>
-            <Route index path="useContext" element={<ContextComponent />}/>
+            <Route  path="useState" element={<StateComponent />} />
+            <Route  path="useEffect" element={<EffectComponent />}/>
+            <Route  path="useContext" element={<ContextComponent />}/>
+            <Route  path="useMemo" element={<MemoComponent />} />
           </Route>
         </Routes>
       </ContextProvider>

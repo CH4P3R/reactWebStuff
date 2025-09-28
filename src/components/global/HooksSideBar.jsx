@@ -6,7 +6,7 @@ export default function HooksSideBar() {
         <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="">useState</Link>
         <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="useEffect">useEffect</Link>
         <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="useContext">useContext</Link>
-        <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="">useMemo</Link>
+        <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="useMemo">useMemo</Link>
         <Link className="hover:bg-gray-800 p-5 transition-all duration-200 ease-in-out" to="">useRef</Link>
       </nav>
   )
