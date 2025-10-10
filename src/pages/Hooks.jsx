@@ -5,7 +5,7 @@ import EffectComponent from "../components/locale/EffectComponent"
 import ContextComponent from "../components/locale/ContextComponent"
 import StateComponent from "../components/locale/StateComponent"
 import MemoComponent from "../components/locale/MemoComponent"
-
+import ReducerComponent from "../components/locale/ReducerComponent"
 export default function Hooks() {
   return (
     <div className="flex w-screen">
@@ -17,6 +17,7 @@ export default function Hooks() {
             <Route  path="useEffect" element={<EffectComponent />}/>
             <Route  path="useContext" element={<ContextComponent />}/>
             <Route  path="useMemo" element={<MemoComponent />} />
+            <Route  path="useReducer" element={<ReducerComponent />} />
           </Route>
         </Routes>
       </ContextProvider>
